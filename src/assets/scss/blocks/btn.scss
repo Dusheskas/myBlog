@@ -1,0 +1,38 @@
+.btn {
+   display: inline-block;
+   vertical-align: top;
+   // В em чтобы при увеличении шрифта паддинг тоже увеличивался
+   padding: 1.12em 2.1em;
+
+   background: $secondary;
+   border: none;
+   border-radius: 3em;
+   cursor: pointer;
+
+   font-weight: 500;
+   font-size: 1.2rem;
+   font-family: inherit;
+   line-height: 1.1;
+   text-decoration: none;
+   color: $white;
+
+   transition: background-color .2s ease-in-out;
+
+   &--red {
+      background-color: $red;
+      box-shadow: 0px 7px 17px -10px rgba($red, 0.2);
+
+      &:hover {
+         background-color: darken($red, 5%);
+      }
+   }
+
+   &--blue {
+      background-color: $accent-blue;
+      box-shadow: 0px 7px 17px -10px rgba($accent-blue, 0.35);
+
+      &:hover {
+         background-color: darken($accent-blue, 5%);
+      }
+   }
+}
